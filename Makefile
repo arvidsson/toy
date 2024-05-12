@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
 BIN_DIR = bin
-SRCS := $(wildcard *.c)
+SRCS := $(wildcard src/*.c)
 OBJS := $(patsubst %.c,$(BIN_DIR)/%.o,$(SRCS))
 TARGET = toy
 
